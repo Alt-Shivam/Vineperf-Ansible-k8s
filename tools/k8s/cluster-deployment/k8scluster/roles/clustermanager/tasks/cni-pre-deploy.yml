@@ -22,8 +22,10 @@
   stat:
     path: /etc/cni/net.d
   register: files_to_delete
+  become: yes
 
 - name: Delete /etc/cni/net.d/
   become: yes
   command: sudo rm -r /etc/cni/net.d/
   when: files_to_delete.stat.exists and files_to_delete.stat.isdir
+

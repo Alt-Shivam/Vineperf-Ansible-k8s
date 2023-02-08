@@ -1,35 +1,473 @@
-2022-12-26 11:20:53,645 p=22013 u=shivank n=ansible | Starting galaxy collection install process
-2022-12-26 11:20:53,656 p=22013 u=shivank n=ansible | Nothing to do. All requested collections are already installed. If you want to reinstall them, consider using `--force`.
-2022-12-26 11:34:20,892 p=22848 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+2023-01-11 22:56:47,666 p=39432 u=shivank n=ansible | Process install dependency map
+2023-01-11 22:56:47,667 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:47,768 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:47,868 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:47,969 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:48,069 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:48,170 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:48,271 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:48,371 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:48,472 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:48,572 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:48,673 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:48,774 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:48,874 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:48,975 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:49,075 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:49,176 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:49,276 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:49,377 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:49,477 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:49,578 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:49,678 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:49,779 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:49,880 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:49,980 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:50,081 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:50,182 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:50,282 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:50,383 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:50,483 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:50,584 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:50,685 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:50,785 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:50,886 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:50,987 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:51,087 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:51,188 p=39432 u=shivank n=ansible | \
+2023-01-11 22:56:51,288 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:51,388 p=39432 u=shivank n=ansible | /
+2023-01-11 22:56:51,491 p=39432 u=shivank n=ansible | -
+2023-01-11 22:56:51,592 p=39432 u=shivank n=ansible | Starting collection install process
+2023-01-11 22:56:51,593 p=39432 u=shivank n=ansible | |
+2023-01-11 22:56:51,693 p=39432 u=shivank n=ansible | Skipping 'kubernetes.core' as it is already installed
+2023-01-11 23:03:50,532 p=39785 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
 
-2022-12-26 11:34:21,025 p=22848 u=shivank n=ansible | [DEPRECATION WARNING]: "include" is deprecated, use include_tasks/import_tasks instead. This feature will be removed in version 2.16. Deprecation warnings can be disabled by setting deprecation_warnings=False 
-in ansible.cfg.
-2022-12-26 11:34:21,090 p=22848 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************************************************************************************************
-2022-12-26 11:34:21,134 p=22848 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
-2022-12-26 11:34:36,684 p=22848 u=shivank n=ansible | ok: [worker]
-2022-12-26 11:34:38,732 p=22848 u=shivank n=ansible | ok: [master]
-2022-12-26 11:34:38,759 p=22848 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
-2022-12-26 11:34:38,759 p=22848 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2022-12-26 11:34:38,759 p=22848 u=shivank n=ansible | worker                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2022-12-26 11:38:16,156 p=23273 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+2023-01-11 23:03:50,927 p=39785 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:03:50,986 p=39785 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:03:51,293 p=39785 u=shivank n=ansible | fatal: [master]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords, you must install the sshpass program"}
+2023-01-11 23:03:51,294 p=39785 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:03:51,294 p=39785 u=shivank n=ansible | master                     : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:04:49,399 p=40165 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
 
-2022-12-26 11:38:16,263 p=23273 u=shivank n=ansible | [DEPRECATION WARNING]: "include" is deprecated, use include_tasks/import_tasks instead. This feature will be removed in version 2.16. Deprecation warnings can be disabled by setting deprecation_warnings=False 
-in ansible.cfg.
-2022-12-26 11:38:16,324 p=23273 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************************************************************************************************
-2022-12-26 11:38:16,356 p=23273 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
-2022-12-26 11:38:32,524 p=23273 u=shivank n=ansible | ok: [master]
-2022-12-26 11:38:33,240 p=23273 u=shivank n=ansible | ok: [worker]
-2022-12-26 11:38:33,268 p=23273 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
-2022-12-26 11:38:33,268 p=23273 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2022-12-26 11:38:33,268 p=23273 u=shivank n=ansible | worker                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2022-12-26 11:43:56,359 p=23501 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+2023-01-11 23:04:49,748 p=40165 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:04:49,805 p=40165 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:05:10,535 p=40165 u=shivank n=ansible | ok: [master]
+2023-01-11 23:05:10,537 p=40165 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:05:10,537 p=40165 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:06:56,212 p=40683 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
 
-2022-12-26 11:43:56,472 p=23501 u=shivank n=ansible | [DEPRECATION WARNING]: "include" is deprecated, use include_tasks/import_tasks instead. This feature will be removed in version 2.16. Deprecation warnings can be disabled by setting deprecation_warnings=False 
-in ansible.cfg.
-2022-12-26 11:43:56,533 p=23501 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************************************************************************************************
-2022-12-26 11:43:56,565 p=23501 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
-2022-12-26 11:44:08,182 p=23501 u=shivank n=ansible | ok: [worker]
-2022-12-26 11:44:09,919 p=23501 u=shivank n=ansible | ok: [master]
-2022-12-26 11:44:09,946 p=23501 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
-2022-12-26 11:44:09,947 p=23501 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2022-12-26 11:44:09,947 p=23501 u=shivank n=ansible | worker                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:06:56,564 p=40683 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:06:56,615 p=40683 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:07:19,057 p=40683 u=shivank n=ansible | ok: [master]
+2023-01-11 23:07:19,071 p=40683 u=shivank n=ansible | TASK [clustermanager : Pulling images required for setting up a Kubernetes cluster] *******************************************
+2023-01-11 23:07:19,098 p=40709 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:07:19,102 p=40709 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:07:35,663 p=40683 u=shivank n=ansible | changed: [master]
+2023-01-11 23:07:35,690 p=40683 u=shivank n=ansible | TASK [clustermanager : Initializing Kubernetes cluster] ***********************************************************************
+2023-01-11 23:07:35,708 p=40718 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:07:35,711 p=40718 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:08:56,752 p=40683 u=shivank n=ansible | changed: [master]
+2023-01-11 23:08:56,769 p=40683 u=shivank n=ansible | TASK [clustermanager : Storing Logs and Generated token for future purpose.] **************************************************
+2023-01-11 23:08:56,786 p=40742 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:08:56,789 p=40742 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:09:14,191 p=40683 u=shivank n=ansible | changed: [master]
+2023-01-11 23:09:14,217 p=40683 u=shivank n=ansible | TASK [clustermanager : .kube directory creation in $HOME/] ********************************************************************
+2023-01-11 23:09:14,233 p=40809 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:09:14,237 p=40809 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:09:16,726 p=40683 u=shivank n=ansible | changed: [master]
+2023-01-11 23:09:16,753 p=40683 u=shivank n=ansible | TASK [clustermanager : Copying required files] ********************************************************************************
+2023-01-11 23:09:16,771 p=40816 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:09:16,774 p=40816 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:09:38,964 p=40683 u=shivank n=ansible | [WARNING]: Consider using 'become', 'become_method', and 'become_user' rather than running sudo
+
+2023-01-11 23:09:38,965 p=40683 u=shivank n=ansible | changed: [master]
+2023-01-11 23:09:38,999 p=40683 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:09:39,002 p=40683 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:09:39,018 p=40683 u=shivank n=ansible | TASK [clustermanager : check node is already in cluster] **********************************************************************
+2023-01-11 23:09:42,982 p=40683 u=shivank n=ansible | ok: [master -> 10.200.110.251]
+2023-01-11 23:09:43,027 p=40683 u=shivank n=ansible | TASK [clustermanager : get join command] **************************************************************************************
+2023-01-11 23:09:45,874 p=40683 u=shivank n=ansible | changed: [master -> 10.200.110.251]
+2023-01-11 23:09:45,902 p=40683 u=shivank n=ansible | TASK [clustermanager : join cluster] ******************************************************************************************
+2023-01-11 23:09:45,918 p=40683 u=shivank n=ansible | skipping: [master]
+2023-01-11 23:09:45,931 p=40683 u=shivank n=ansible | TASK [clustermanager : Install openshift python package] **********************************************************************
+2023-01-11 23:10:00,471 p=40683 u=shivank n=ansible | fatal: [master]: FAILED! => {"changed": false, "msg": "Unable to find any of pip3.6 to use.  pip needs to be installed."}
+2023-01-11 23:10:00,474 p=40683 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:10:00,474 p=40683 u=shivank n=ansible | master                     : ok=8    changed=6    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-01-11 23:14:22,323 p=41210 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2023-01-11 23:14:22,676 p=41210 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:14:22,728 p=41210 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:14:41,094 p=41210 u=shivank n=ansible | ok: [master]
+2023-01-11 23:14:41,107 p=41210 u=shivank n=ansible | TASK [clustermanager : Install openshift python package] **********************************************************************
+2023-01-11 23:14:41,124 p=41232 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:14:41,127 p=41232 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:14:54,925 p=41210 u=shivank n=ansible | fatal: [master]: FAILED! => {"changed": false, "msg": "Unable to find any of pip3.6 to use.  pip needs to be installed."}
+2023-01-11 23:14:54,929 p=41210 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:14:54,929 p=41210 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:22:58,741 p=41621 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2023-01-11 23:22:59,103 p=41621 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:22:59,158 p=41621 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:23:20,659 p=41621 u=shivank n=ansible | ok: [master]
+2023-01-11 23:23:20,672 p=41621 u=shivank n=ansible | TASK [clustermanager : Install openshift python package] **********************************************************************
+2023-01-11 23:23:20,690 p=41635 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:23:20,693 p=41635 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:23:39,641 p=41621 u=shivank n=ansible | changed: [master]
+2023-01-11 23:23:39,669 p=41621 u=shivank n=ansible | TASK [clustermanager : Install Helm] ******************************************************************************************
+2023-01-11 23:23:39,689 p=41642 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:23:39,692 p=41642 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:24:09,916 p=41621 u=shivank n=ansible | changed: [master]
+2023-01-11 23:24:09,943 p=41621 u=shivank n=ansible | TASK [clustermanager : Move helm to PATH] *************************************************************************************
+2023-01-11 23:24:23,202 p=41621 u=shivank n=ansible | changed: [master]
+2023-01-11 23:24:23,216 p=41621 u=shivank n=ansible | TASK [clustermanager : Check whether /etc/cni/net.d/ exists] ******************************************************************
+2023-01-11 23:24:25,907 p=41621 u=shivank n=ansible | fatal: [master]: FAILED! => {"changed": false, "msg": "Permission denied"}
+2023-01-11 23:24:25,909 p=41621 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:24:25,909 p=41621 u=shivank n=ansible | master                     : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:31:29,436 p=42794 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2023-01-11 23:31:29,797 p=42794 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:31:29,850 p=42794 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:31:37,168 p=42794 u=shivank n=ansible | fatal: [master]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+2023-01-11 23:31:37,170 p=42794 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:31:37,170 p=42794 u=shivank n=ansible | master                     : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:32:02,727 p=42863 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2023-01-11 23:32:03,092 p=42863 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:32:03,144 p=42863 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:32:22,144 p=42863 u=shivank n=ansible | ok: [master]
+2023-01-11 23:32:22,157 p=42863 u=shivank n=ansible | TASK [clustermanager : Install openshift python package] **********************************************************************
+2023-01-11 23:32:22,177 p=42878 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:32:22,182 p=42878 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:32:36,388 p=42863 u=shivank n=ansible | ok: [master]
+2023-01-11 23:32:36,403 p=42863 u=shivank n=ansible | TASK [clustermanager : Install Helm] ******************************************************************************************
+2023-01-11 23:32:36,420 p=42884 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:32:36,424 p=42884 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:33:10,479 p=42863 u=shivank n=ansible | changed: [master]
+2023-01-11 23:33:10,506 p=42863 u=shivank n=ansible | TASK [clustermanager : Move helm to PATH] *************************************************************************************
+2023-01-11 23:33:23,681 p=42863 u=shivank n=ansible | changed: [master]
+2023-01-11 23:33:23,709 p=42863 u=shivank n=ansible | TASK [clustermanager : Check whether /etc/cni/net.d/ exists] ******************************************************************
+2023-01-11 23:33:26,053 p=42863 u=shivank n=ansible | fatal: [master]: FAILED! => {"changed": false, "msg": "Permission denied"}
+2023-01-11 23:33:26,055 p=42863 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:33:26,055 p=42863 u=shivank n=ansible | master                     : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:37:24,973 p=43174 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2023-01-11 23:37:25,330 p=43174 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:37:25,382 p=43174 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:37:46,962 p=43174 u=shivank n=ansible | ok: [master]
+2023-01-11 23:37:46,975 p=43174 u=shivank n=ansible | TASK [clustermanager : Install openshift python package] **********************************************************************
+2023-01-11 23:37:46,991 p=43201 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:37:46,995 p=43201 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:38:02,108 p=43174 u=shivank n=ansible | ok: [master]
+2023-01-11 23:38:02,136 p=43174 u=shivank n=ansible | TASK [clustermanager : Install Helm] ******************************************************************************************
+2023-01-11 23:38:02,155 p=43207 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:38:02,158 p=43207 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:38:34,641 p=43174 u=shivank n=ansible | changed: [master]
+2023-01-11 23:38:34,672 p=43174 u=shivank n=ansible | TASK [clustermanager : Move helm to PATH] *************************************************************************************
+2023-01-11 23:38:47,855 p=43174 u=shivank n=ansible | changed: [master]
+2023-01-11 23:38:47,884 p=43174 u=shivank n=ansible | TASK [clustermanager : Check whether /etc/cni/net.d/ exists] ******************************************************************
+2023-01-11 23:38:50,223 p=43174 u=shivank n=ansible | fatal: [master]: FAILED! => {"changed": false, "msg": "Permission denied"}
+2023-01-11 23:38:50,225 p=43174 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:38:50,226 p=43174 u=shivank n=ansible | master                     : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:41:14,007 p=43397 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2023-01-11 23:41:14,409 p=43397 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:41:14,463 p=43397 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:41:33,456 p=43397 u=shivank n=ansible | ok: [master]
+2023-01-11 23:41:33,470 p=43397 u=shivank n=ansible | TASK [clustermanager : Install openshift python package] **********************************************************************
+2023-01-11 23:41:33,487 p=43429 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:41:33,491 p=43429 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:41:48,083 p=43397 u=shivank n=ansible | ok: [master]
+2023-01-11 23:41:48,111 p=43397 u=shivank n=ansible | TASK [clustermanager : Install Helm] ******************************************************************************************
+2023-01-11 23:41:48,129 p=43436 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:41:48,132 p=43436 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:42:18,575 p=43397 u=shivank n=ansible | changed: [master]
+2023-01-11 23:42:18,604 p=43397 u=shivank n=ansible | TASK [clustermanager : Move helm to PATH] *************************************************************************************
+2023-01-11 23:42:31,853 p=43397 u=shivank n=ansible | changed: [master]
+2023-01-11 23:42:31,877 p=43397 u=shivank n=ansible | TASK [clustermanager : Check whether /etc/cni/net.d/ exists] ******************************************************************
+2023-01-11 23:42:34,802 p=43397 u=shivank n=ansible | fatal: [master]: FAILED! => {"changed": false, "msg": "Permission denied"}
+2023-01-11 23:42:34,805 p=43397 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:42:34,806 p=43397 u=shivank n=ansible | master                     : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-11 23:45:14,727 p=43596 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2023-01-11 23:45:15,085 p=43596 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************
+2023-01-11 23:45:15,140 p=43596 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2023-01-11 23:45:35,707 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:45:35,721 p=43596 u=shivank n=ansible | TASK [clustermanager : Install openshift python package] **********************************************************************
+2023-01-11 23:45:35,738 p=43612 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:45:35,741 p=43612 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:45:50,685 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:45:50,705 p=43596 u=shivank n=ansible | TASK [clustermanager : Install Helm] ******************************************************************************************
+2023-01-11 23:45:50,722 p=43619 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:45:50,726 p=43619 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:46:20,563 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:46:20,591 p=43596 u=shivank n=ansible | TASK [clustermanager : Move helm to PATH] *************************************************************************************
+2023-01-11 23:46:33,952 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:46:33,970 p=43596 u=shivank n=ansible | TASK [clustermanager : Check whether /etc/cni/net.d/ exists] ******************************************************************
+2023-01-11 23:46:46,620 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:46:46,647 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete /etc/cni/net.d/] ********************************************************************************
+2023-01-11 23:46:46,664 p=43699 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:46:46,667 p=43699 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:09,994 p=43596 u=shivank n=ansible | [WARNING]: Consider using 'become', 'become_method', and 'become_user' rather than running sudo
+
+2023-01-11 23:47:09,995 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:47:10,013 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete Kube-flannel] ***********************************************************************************
+2023-01-11 23:47:10,031 p=43707 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:10,034 p=43707 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:14,010 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:47:14,030 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy Kube-flannel] ***********************************************************************************
+2023-01-11 23:47:14,047 p=43712 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:14,050 p=43712 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:27,761 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:47:27,779 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete Multus] *****************************************************************************************
+2023-01-11 23:47:27,797 p=43721 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:27,801 p=43721 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:31,959 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:47:31,993 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy Multus] *****************************************************************************************
+2023-01-11 23:47:32,010 p=43726 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:32,013 p=43726 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:35,718 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:47:35,739 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete ovs-cni-plugin] *********************************************************************************
+2023-01-11 23:47:35,756 p=43731 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:35,759 p=43731 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:39,254 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:47:39,277 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy ovs-cni-plugin] *********************************************************************************
+2023-01-11 23:47:39,295 p=43736 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:39,298 p=43736 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:43,280 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:47:43,300 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete SRIOV CNI Daemonset] ****************************************************************************
+2023-01-11 23:47:43,318 p=43748 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:43,321 p=43748 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:46,194 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:47:46,223 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete SRIOV Device Plugin] ****************************************************************************
+2023-01-11 23:47:46,241 p=43757 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:46,245 p=43757 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:49,258 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:47:49,281 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy SRIOV Device Plugin Config] *********************************************************************
+2023-01-11 23:47:49,298 p=43763 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:49,302 p=43763 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:52,305 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:47:52,334 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy SRIOV Device Plugin Config] *********************************************************************
+2023-01-11 23:47:52,353 p=43768 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:52,357 p=43768 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:54,977 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:47:55,004 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy SRIOV Device Plugin] ****************************************************************************
+2023-01-11 23:47:55,022 p=43773 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:55,025 p=43773 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:57,778 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:47:57,793 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy SRIOV CNI] **************************************************************************************
+2023-01-11 23:47:57,810 p=43778 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:47:57,814 p=43778 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:48:00,704 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:48:00,725 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete userspace-cni plugin] ***************************************************************************
+2023-01-11 23:48:00,744 p=43783 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:48:00,748 p=43783 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:48:03,722 p=43596 u=shivank n=ansible | ok: [master]
+2023-01-11 23:48:03,753 p=43596 u=shivank n=ansible | TASK [clustermanager : Deploy userspace-cni plugin] ***************************************************************************
+2023-01-11 23:48:03,771 p=43788 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:48:03,774 p=43788 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:48:06,711 p=43596 u=shivank n=ansible | changed: [master]
+2023-01-11 23:48:06,738 p=43596 u=shivank n=ansible | TASK [clustermanager : Delete Calico] *****************************************************************************************
+2023-01-11 23:48:06,754 p=43793 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/core.py) as it seems to
+be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:48:06,757 p=43793 u=shivank n=ansible | [WARNING]: Skipping plugin (/home/shivank/.local/lib/python3.10/site-packages/ansible/plugins/filter/mathstuff.py) as it seems
+to be invalid: cannot import name 'environmentfilter' from 'jinja2.filters' (/home/shivank/.local/lib/python3.10/site-
+packages/jinja2/filters.py)
+
+2023-01-11 23:48:06,767 p=43596 u=shivank n=ansible | fatal: [master]: FAILED! => {"msg": "template error while templating string: No filter named 'from_yaml_all'.. String: {{ lookup(\"url\", \"https://docs.projectcalico.org/manifests/calico.yaml\", split_lines=False) | from_yaml_all | list }}"}
+2023-01-11 23:48:06,769 p=43596 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************
+2023-01-11 23:48:06,769 p=43596 u=shivank n=ansible | master                     : ok=20   changed=10   unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
