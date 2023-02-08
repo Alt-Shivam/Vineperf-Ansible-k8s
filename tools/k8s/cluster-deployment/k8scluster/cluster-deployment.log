@@ -1,0 +1,35 @@
+2022-12-26 11:20:53,645 p=22013 u=shivank n=ansible | Starting galaxy collection install process
+2022-12-26 11:20:53,656 p=22013 u=shivank n=ansible | Nothing to do. All requested collections are already installed. If you want to reinstall them, consider using `--force`.
+2022-12-26 11:34:20,892 p=22848 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2022-12-26 11:34:21,025 p=22848 u=shivank n=ansible | [DEPRECATION WARNING]: "include" is deprecated, use include_tasks/import_tasks instead. This feature will be removed in version 2.16. Deprecation warnings can be disabled by setting deprecation_warnings=False 
+in ansible.cfg.
+2022-12-26 11:34:21,090 p=22848 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************************************************************************************************
+2022-12-26 11:34:21,134 p=22848 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2022-12-26 11:34:36,684 p=22848 u=shivank n=ansible | ok: [worker]
+2022-12-26 11:34:38,732 p=22848 u=shivank n=ansible | ok: [master]
+2022-12-26 11:34:38,759 p=22848 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2022-12-26 11:34:38,759 p=22848 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-26 11:34:38,759 p=22848 u=shivank n=ansible | worker                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-26 11:38:16,156 p=23273 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2022-12-26 11:38:16,263 p=23273 u=shivank n=ansible | [DEPRECATION WARNING]: "include" is deprecated, use include_tasks/import_tasks instead. This feature will be removed in version 2.16. Deprecation warnings can be disabled by setting deprecation_warnings=False 
+in ansible.cfg.
+2022-12-26 11:38:16,324 p=23273 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************************************************************************************************
+2022-12-26 11:38:16,356 p=23273 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2022-12-26 11:38:32,524 p=23273 u=shivank n=ansible | ok: [master]
+2022-12-26 11:38:33,240 p=23273 u=shivank n=ansible | ok: [worker]
+2022-12-26 11:38:33,268 p=23273 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2022-12-26 11:38:33,268 p=23273 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-26 11:38:33,268 p=23273 u=shivank n=ansible | worker                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-26 11:43:56,359 p=23501 u=shivank n=ansible | [WARNING]: Found both group and host with same name: master
+
+2022-12-26 11:43:56,472 p=23501 u=shivank n=ansible | [DEPRECATION WARNING]: "include" is deprecated, use include_tasks/import_tasks instead. This feature will be removed in version 2.16. Deprecation warnings can be disabled by setting deprecation_warnings=False 
+in ansible.cfg.
+2022-12-26 11:43:56,533 p=23501 u=shivank n=ansible | PLAY [all] ********************************************************************************************************************************************************************************************************
+2022-12-26 11:43:56,565 p=23501 u=shivank n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2022-12-26 11:44:08,182 p=23501 u=shivank n=ansible | ok: [worker]
+2022-12-26 11:44:09,919 p=23501 u=shivank n=ansible | ok: [master]
+2022-12-26 11:44:09,946 p=23501 u=shivank n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2022-12-26 11:44:09,947 p=23501 u=shivank n=ansible | master                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-26 11:44:09,947 p=23501 u=shivank n=ansible | worker                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
